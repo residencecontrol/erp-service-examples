@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>TestModelFTS</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{03c3f611-12b2-4040-9e3e-d5a8b9d17d11}</ProjectGuid>
+    <Name>TestSimple</Name>
+    <RootNamespace>TestSimple</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\rsmTutRequestSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutRequestSimple</Name>
+      <Link>Classes\rsmTutRequestSimple</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutResponseSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutResponseSimple</Name>
+      <Link>Classes\rsmTutResponseSimple</Link>
+    </Content>
+    <Content Include="AxClass\rsmTutServiceSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceSimple</Name>
+      <Link>Classes\rsmTutServiceSimple</Link>
+    </Content>
+    <Content Include="AxServiceGroup\rsmTutServiceGroup">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceGroup</Name>
+      <Link>Service Groups\rsmTutServiceGroup</Link>
+    </Content>
+    <Content Include="AxService\rsmTutServiceSimple">
+      <SubType>Content</SubType>
+      <Name>rsmTutServiceSimple</Name>
+      <Link>Services\rsmTutServiceSimple</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
+</Project>

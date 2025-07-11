@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>TestModelFTS</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{7bfcdf08-4cd1-4cbb-81cd-56a586c52390}</ProjectGuid>
+    <Name>TestService_FTS</Name>
+    <RootNamespace>TestService_FTS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\HelloContract">
+      <SubType>Content</SubType>
+      <Name>HelloContract</Name>
+      <Link>Classes\HelloContract</Link>
+    </Content>
+    <Content Include="AxClass\HelloService">
+      <SubType>Content</SubType>
+      <Name>HelloService</Name>
+      <Link>Classes\HelloService</Link>
+    </Content>
+    <Content Include="AxClass\InventLocationResponse_FTS">
+      <SubType>Content</SubType>
+      <Name>InventLocationResponse_FTS</Name>
+      <Link>Classes\InventLocationResponse_FTS</Link>
+    </Content>
+    <Content Include="AxClass\TestService_FTS">
+      <SubType>Content</SubType>
+      <Name>TestService_FTS</Name>
+      <Link>Classes\TestService_FTS</Link>
+    </Content>
+    <Content Include="AxServiceGroup\HelloServiceGroup">
+      <SubType>Content</SubType>
+      <Name>HelloServiceGroup</Name>
+      <Link>Service Groups\HelloServiceGroup</Link>
+    </Content>
+    <Content Include="AxServiceGroup\TestServiceGroup_FTS">
+      <SubType>Content</SubType>
+      <Name>TestServiceGroup_FTS</Name>
+      <Link>Service Groups\TestServiceGroup_FTS</Link>
+    </Content>
+    <Content Include="AxService\HelloService">
+      <SubType>Content</SubType>
+      <Name>HelloService</Name>
+      <Link>Services\HelloService</Link>
+    </Content>
+    <Content Include="AxService\TestService_FTS">
+      <SubType>Content</SubType>
+      <Name>TestService_FTS</Name>
+      <Link>Services\TestService_FTS</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
+</Project>

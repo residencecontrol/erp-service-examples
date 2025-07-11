@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cachefile
+
+# Build outputs
+bin/
+obj/
+Ax*Cache/
+XppIL/
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Dynamics 365 F&O generated metadata
+*.dlc
+*.log
+
+# Ignore but *not* your .sln or .rnrproj files!

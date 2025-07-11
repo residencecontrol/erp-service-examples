@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>TestModelFTS</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{5224d5ff-a45f-4ef5-a499-8f633966dbc8}</ProjectGuid>
+    <Name>ProductionOrderService_FTS</Name>
+    <RootNamespace>ProductionOrderService_FTS</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PickingListContract_FTS">
+      <SubType>Content</SubType>
+      <Name>PickingListContract_FTS</Name>
+      <Link>Classes\PickingListContract_FTS</Link>
+    </Content>
+    <Content Include="AxClass\ProductionOrderContract_FTS">
+      <SubType>Content</SubType>
+      <Name>ProductionOrderContract_FTS</Name>
+      <Link>Classes\ProductionOrderContract_FTS</Link>
+    </Content>
+    <Content Include="AxClass\ProductionRequest_FTS">
+      <SubType>Content</SubType>
+      <Name>ProductionRequest_FTS</Name>
+      <Link>Classes\ProductionRequest_FTS</Link>
+    </Content>
+    <Content Include="AxClass\ProductionResponse_FTS">
+      <SubType>Content</SubType>
+      <Name>ProductionResponse_FTS</Name>
+      <Link>Classes\ProductionResponse_FTS</Link>
+    </Content>
+    <Content Include="AxClass\ProductionService_FTS">
+      <SubType>Content</SubType>
+      <Name>ProductionService_FTS</Name>
+      <Link>Classes\ProductionService_FTS</Link>
+    </Content>
+    <Content Include="AxClass\RAFJournalContract_FTS">
+      <SubType>Content</SubType>
+      <Name>RAFJournalContract_FTS</Name>
+      <Link>Classes\RAFJournalContract_FTS</Link>
+    </Content>
+    <Content Include="AxServiceGroup\TestServiceGroup_FTS">
+      <SubType>Content</SubType>
+      <Name>TestServiceGroup_FTS</Name>
+      <Link>Service Groups\TestServiceGroup_FTS</Link>
+    </Content>
+    <Content Include="AxService\ProductionService_FTS">
+      <SubType>Content</SubType>
+      <Name>ProductionService_FTS</Name>
+      <Link>Services\ProductionService_FTS</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
+</Project>

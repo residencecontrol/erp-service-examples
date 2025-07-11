@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TestSimple (USR) [TestModelFTS]", "TestSimple\TestSimple.rnrproj", "{03C3F611-12B2-4040-9E3E-D5A8B9D17D11}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "SalesOrdersTestService (USR) [TestModelFTS]", "SalesOrdersTestService\SalesOrdersTestService.rnrproj", "{3D3FE15A-466A-467C-9530-E1388052A173}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TestComplex (USR) [TestModelFTS]", "TestComplex\TestComplex.rnrproj", "{31DC0522-CF96-4615-B89E-744F65668897}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "ItemOnHandService_FTS (USR) [TestModelFTS]", "ItemOnHandService_FTS\ItemOnHandService_FTS.rnrproj", "{AF91DE13-0526-4EE9-9CA5-FD8CBD1735D8}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TestService_FTS (USR) [TestModelFTS]", "TestService_FTS\TestService_FTS.rnrproj", "{7BFCDF08-4CD1-4CBB-81CD-56A586C52390}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "ProductionOrderService_FTS (USR) [TestModelFTS]", "ProductionOrderService_FTS\ProductionOrderService_FTS.rnrproj", "{5224D5FF-A45F-4EF5-A499-8F633966DBC8}"
+EndProject
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "M2MServices (ISV) [Fleet Management]", "M2MServices\M2MServices.rnrproj", "{26E6C714-160A-4B63-82E1-C3BD00DF8C86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03C3F611-12B2-4040-9E3E-D5A8B9D17D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C3F611-12B2-4040-9E3E-D5A8B9D17D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3FE15A-466A-467C-9530-E1388052A173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3FE15A-466A-467C-9530-E1388052A173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DC0522-CF96-4615-B89E-744F65668897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DC0522-CF96-4615-B89E-744F65668897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF91DE13-0526-4EE9-9CA5-FD8CBD1735D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF91DE13-0526-4EE9-9CA5-FD8CBD1735D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFCDF08-4CD1-4CBB-81CD-56A586C52390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFCDF08-4CD1-4CBB-81CD-56A586C52390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5224D5FF-A45F-4EF5-A499-8F633966DBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5224D5FF-A45F-4EF5-A499-8F633966DBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E6C714-160A-4B63-82E1-C3BD00DF8C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E6C714-160A-4B63-82E1-C3BD00DF8C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83D3AFE2-B1CF-459A-9F25-EF942E76CFE8}
+	EndGlobalSection
+EndGlobal
