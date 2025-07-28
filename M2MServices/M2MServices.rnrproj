@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
-    <Model>FleetManagement</Model>
+    <Model>TestModelFTS</Model>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <OutputPath>bin</OutputPath>
     <SchemaVersion>2.0</SchemaVersion>
@@ -31,6 +31,53 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AxClass\PickingListContract_M2M">
+      <SubType>Content</SubType>
+      <Name>PickingListContract_M2M</Name>
+      <Link>Classes\PickingListContract_M2M</Link>
+    </Content>
+    <Content Include="AxClass\ProductionOrderContract_M2M">
+      <SubType>Content</SubType>
+      <Name>ProductionOrderContract_M2M</Name>
+      <Link>Classes\ProductionOrderContract_M2M</Link>
+    </Content>
+    <Content Include="AxClass\ProductionRequest_M2M">
+      <SubType>Content</SubType>
+      <Name>ProductionRequest_M2M</Name>
+      <Link>Classes\ProductionRequest_M2M</Link>
+    </Content>
+    <Content Include="AxClass\ProductionResponse_M2M">
+      <SubType>Content</SubType>
+      <Name>ProductionResponse_M2M</Name>
+      <Link>Classes\ProductionResponse_M2M</Link>
+    </Content>
+    <Content Include="AxClass\ProductionService_M2M">
+      <SubType>Content</SubType>
+      <Name>ProductionService_M2M</Name>
+      <Link>Classes\ProductionService_M2M</Link>
+    </Content>
+    <Content Include="AxClass\RAFJournalContract_M2M">
+      <SubType>Content</SubType>
+      <Name>RAFJournalContract_M2M</Name>
+      <Link>Classes\RAFJournalContract_M2M</Link>
+    </Content>
+    <Content Include="AxServiceGroup\M2M">
+      <SubType>Content</SubType>
+      <Name>M2M</Name>
+      <Link>Service Groups\M2M</Link>
+    </Content>
+    <Content Include="AxService\ProdOrder">
+      <SubType>Content</SubType>
+      <Name>ProdOrder</Name>
+      <Link>Services\ProdOrder</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes" />
+    <Folder Include="Service Groups\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
 </Project>

@@ -37,45 +37,10 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AxClass\PickingListContract_FTS">
-      <SubType>Content</SubType>
-      <Name>PickingListContract_FTS</Name>
-      <Link>Classes\PickingListContract_FTS</Link>
-    </Content>
-    <Content Include="AxClass\ProductionOrderContract_FTS">
-      <SubType>Content</SubType>
-      <Name>ProductionOrderContract_FTS</Name>
-      <Link>Classes\ProductionOrderContract_FTS</Link>
-    </Content>
-    <Content Include="AxClass\ProductionRequest_FTS">
-      <SubType>Content</SubType>
-      <Name>ProductionRequest_FTS</Name>
-      <Link>Classes\ProductionRequest_FTS</Link>
-    </Content>
-    <Content Include="AxClass\ProductionResponse_FTS">
-      <SubType>Content</SubType>
-      <Name>ProductionResponse_FTS</Name>
-      <Link>Classes\ProductionResponse_FTS</Link>
-    </Content>
-    <Content Include="AxClass\ProductionService_FTS">
-      <SubType>Content</SubType>
-      <Name>ProductionService_FTS</Name>
-      <Link>Classes\ProductionService_FTS</Link>
-    </Content>
-    <Content Include="AxClass\RAFJournalContract_FTS">
-      <SubType>Content</SubType>
-      <Name>RAFJournalContract_FTS</Name>
-      <Link>Classes\RAFJournalContract_FTS</Link>
-    </Content>
     <Content Include="AxServiceGroup\TestServiceGroup_FTS">
       <SubType>Content</SubType>
       <Name>TestServiceGroup_FTS</Name>
       <Link>Service Groups\TestServiceGroup_FTS</Link>
-    </Content>
-    <Content Include="AxService\ProductionService_FTS">
-      <SubType>Content</SubType>
-      <Name>ProductionService_FTS</Name>
-      <Link>Services\ProductionService_FTS</Link>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
