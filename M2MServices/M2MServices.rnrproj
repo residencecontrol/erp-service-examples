@@ -32,6 +32,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AxClass\AdjustmentService">
+      <SubType>Content</SubType>
+      <Name>AdjustmentService</Name>
+      <Link>Classes\AdjustmentService</Link>
+    </Content>
     <Content Include="AxClass\PickingListContract_M2M">
       <SubType>Content</SubType>
       <Name>PickingListContract_M2M</Name>
