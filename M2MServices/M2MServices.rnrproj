@@ -32,54 +32,107 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AxClass\AdjustmentRequest">
+      <SubType>Content</SubType>
+      <Name>AdjustmentRequest</Name>
+      <Link>Classes\Adj\AdjustmentRequest</Link>
+    </Content>
     <Content Include="AxClass\AdjustmentService">
       <SubType>Content</SubType>
       <Name>AdjustmentService</Name>
-      <Link>Classes\AdjustmentService</Link>
+      <Link>Classes\Adj\AdjustmentService</Link>
     </Content>
     <Content Include="AxClass\PickingListContract_M2M">
       <SubType>Content</SubType>
       <Name>PickingListContract_M2M</Name>
-      <Link>Classes\PickingListContract_M2M</Link>
+      <Link>Classes\PO\PickingListContract_M2M</Link>
     </Content>
-    <Content Include="AxClass\ProductionOrderContract_M2M">
+    <Content Include="AxClass\ProductionOrderData">
       <SubType>Content</SubType>
-      <Name>ProductionOrderContract_M2M</Name>
-      <Link>Classes\ProductionOrderContract_M2M</Link>
+      <Name>ProductionOrderData</Name>
+      <Link>Classes\PO\ProductionOrderData</Link>
     </Content>
     <Content Include="AxClass\ProductionRequest_M2M">
       <SubType>Content</SubType>
       <Name>ProductionRequest_M2M</Name>
-      <Link>Classes\ProductionRequest_M2M</Link>
+      <Link>Classes\PO\ProductionRequest_M2M</Link>
     </Content>
     <Content Include="AxClass\ProductionResponse_M2M">
       <SubType>Content</SubType>
       <Name>ProductionResponse_M2M</Name>
-      <Link>Classes\ProductionResponse_M2M</Link>
+      <Link>Classes\PO\ProductionResponse_M2M</Link>
     </Content>
     <Content Include="AxClass\ProductionService_M2M">
       <SubType>Content</SubType>
       <Name>ProductionService_M2M</Name>
-      <Link>Classes\ProductionService_M2M</Link>
+      <Link>Classes\PO\ProductionService_M2M</Link>
     </Content>
     <Content Include="AxClass\RAFJournalContract_M2M">
       <SubType>Content</SubType>
       <Name>RAFJournalContract_M2M</Name>
-      <Link>Classes\RAFJournalContract_M2M</Link>
+      <Link>Classes\PO\RAFJournalContract_M2M</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderHeaderContract">
+      <SubType>Content</SubType>
+      <Name>SalesOrderHeaderContract</Name>
+      <Link>Classes\SO\SalesOrderHeaderContract</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderLinesContract">
+      <SubType>Content</SubType>
+      <Name>SalesOrderLinesContract</Name>
+      <Link>Classes\SO\SalesOrderLinesContract</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderRequest">
+      <SubType>Content</SubType>
+      <Name>SalesOrderRequest</Name>
+      <Link>Classes\SO\SalesOrderRequest</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderResponse">
+      <SubType>Content</SubType>
+      <Name>SalesOrderResponse</Name>
+      <Link>Classes\SO\SalesOrderResponse</Link>
+    </Content>
+    <Content Include="AxClass\SalesOrderService">
+      <SubType>Content</SubType>
+      <Name>SalesOrderService</Name>
+      <Link>Classes\SO\SalesOrderService</Link>
+    </Content>
+    <Content Include="AxClass\TestService">
+      <SubType>Content</SubType>
+      <Name>TestService</Name>
+      <Link>Classes\TestService</Link>
     </Content>
     <Content Include="AxServiceGroup\M2M">
       <SubType>Content</SubType>
       <Name>M2M</Name>
       <Link>Service Groups\M2M</Link>
     </Content>
+    <Content Include="AxService\Adjustments">
+      <SubType>Content</SubType>
+      <Name>Adjustments</Name>
+      <Link>Services\Adjustments</Link>
+    </Content>
     <Content Include="AxService\ProdOrder">
       <SubType>Content</SubType>
       <Name>ProdOrder</Name>
       <Link>Services\ProdOrder</Link>
     </Content>
+    <Content Include="AxService\SalesOrder">
+      <SubType>Content</SubType>
+      <Name>SalesOrder</Name>
+      <Link>Services\SalesOrder</Link>
+    </Content>
+    <Content Include="AxService\TestService">
+      <SubType>Content</SubType>
+      <Name>TestService</Name>
+      <Link>Services\TestService</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes" />
+    <Folder Include="Classes\Adj" />
+    <Folder Include="Classes\PO" />
+    <Folder Include="Classes\SO" />
     <Folder Include="Service Groups\" />
     <Folder Include="Services\" />
   </ItemGroup>
