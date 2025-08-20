@@ -127,6 +127,11 @@
       <Name>TestService</Name>
       <Link>Services\TestService</Link>
     </Content>
+    <Content Include="AxTableExtension\SalesLine.TestModelFTS">
+      <SubType>Content</SubType>
+      <Name>SalesLine.TestModelFTS</Name>
+      <Link>Table Extensions\SalesLine.TestModelFTS</Link>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes" />
@@ -135,6 +140,7 @@
     <Folder Include="Classes\SO" />
     <Folder Include="Service Groups\" />
     <Folder Include="Services\" />
+    <Folder Include="Table Extensions\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
